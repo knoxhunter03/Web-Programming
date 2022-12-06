@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Details</title>
+	</head>
+<body>
+	<h1>Details: </h1>
+	<p id= para> </p>
+	<script>
+		var parts=document.URL.split("?");
+		var p= parts[1].split("&");
+		for(i=0;i<p.length;i++)
+		{
+			document.getElementById('para').innerHTML= document.getElementById('para').innerHTML+'<br>'+p[i];
+		}
+	</script>
+</body>
+</html>

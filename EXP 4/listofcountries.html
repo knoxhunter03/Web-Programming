@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			List of Countries
+		</title>
+		<style>
+			p,select{
+				font-size: 25px;
+			}
+		</style>
+		<script type="text/javascript">
+			function getCapital(){
+				document.getElementById('dc').innerHTML=document.getElementById('c').value
+			}
+		</script>
+	</head>
+<body>
+	<select id="c" onchange="getCapital()">
+		<option value=" ">Select Preferred Country</option>
+		<option value="KABUL">AFGHANISTAN</option>
+		<option value="MANAMA">BAHRAIN</option>
+		<option value="CAIRO">EGYPT</option>
+		<option value="PARIS">FRANCE</option>
+		<option value="NEW DELHI">INDIA</option>
+	</select>
+	<p id="dc" style="color:darkorange;"></p>
+</body>
+</html>

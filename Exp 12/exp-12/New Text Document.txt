@@ -1,0 +1,21 @@
+student.json
+[
+{
+"name":"johnysins",
+"usn": "20BTRCI001",
+"branch":"MACT",
+"sem":3
+},
+{
+"name":"lohith",
+"usn": "20BTRCM011",
+"branch":"MACT",
+"sem":5
+},
+{
+"name":"laddu",
+"usn": "20BTRCI003",
+"branch":"CTIS",
+"sem":5
+}
+]

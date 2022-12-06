@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application Form</title>
+</head>
+<body>
+	<form >
+		<fieldset>
+			Name:<input type="text" id="uname"><br><br>
+			<p>Please select your gender:</p>
+			<input type="radio" id="male" name="gender" value="male"> Male
+			<input type="radio" id="female" name="gender" value="female">Female
+			<input type="radio" id="other" name="gender" value="other">Other<br><br> 
+			Mobile Number:<input type="tel" id="mobile" name="phone"><br><br>
+			Email Id:<input type="email" id="email" name="email"><br><br>
+			City:<input type="text" id="city"><br><br>
+			State:<input type="text" id="state"><br><br>
+			Country:<select id="country" placeholder="Select Country">
+				<option >India</option>
+				<option >USA</option>
+				<option >China</option>
+				</select><br><br>
+			<input type="button" value="Submit" onclick="add()">
+		</fieldset>
+	</form>
+	<script type="text/JavaScript">
+		function add()
+		{
+			var input = document.getElementsByName('gender');
+			for (var i = 0; i < input.length; i++) 
+			{
+				if (input[i].checked)
+					var a = input[i].value;
+			}
+			var b= document.getElementById("mobile").value;
+			var c= document.getElementById("email").value;
+			var d= document.getElementById("city").value;
+			var e= document.getElementById("state").value;
+			var f= document.getElementById("country").value;
+			window.document.location='./formdetail.html'+'?Name='+document.getElementById("uname").value+'&'+'Gender='+a+'&Mobile='+b+'&Email='+c+'&City='+d+'&State='+e+'&Country='+f;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+	{
+		"name":"LISSHU",
+		"usn": "20BTRCI030",
+		"branch":"CTIS",
+		"sem":3
+	},
+	{
+		"name":"YOUSIF ELAMIN",
+		"usn": "20BTRCI034",
+		"branch":"CTIS",
+		"sem":3
+	},
+	{
+		"name":"VIKNES",
+		"usn": "20BTRCI004",
+		"branch":"CTIS",
+		"sem":7
+	}
+]

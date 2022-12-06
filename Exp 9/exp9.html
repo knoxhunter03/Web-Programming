@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Detail</title>
+	<style>
+		tr {
+			background-color: deeppink;
+		}
+		th {
+			background-color: black;
+			color: palevioletred;
+		}
+		th, td {
+			padding: 6px;
+		}
+	</style>
+</head>
+<body>
+	<form action="exp9_2.php" method="post">
+		<fieldset>
+			<table width="20%" border="1px" cellspacing="0" cellpadding="10">
+				<tr>
+					<th>USN</th>
+					<td><input type="text" name="usn"></td>
+				</tr>
+				<tr>
+					<th>FIRST NAME</th>
+					<td><input type="text" name="fname"></td>
+				</tr>
+				<tr>
+					<th>LAST NAME</th>
+					<td><input type="text" name="lname"></td>
+				</tr>
+				<tr>
+					<th>GENDER</th>
+					<td><input type="radio" id="male" name="gender" value="male"> Male
+						<input type="radio" id="female" name="gender" value="female"> Female
+						<input type="radio" id="other" name="gender" value="other"> Other</td>
+					</tr>
+					<tr>
+						<th>EMAIL</th>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<th>USERNAME</th>
+						<td><input type="text" name="username"></td>
+					</tr>
+					<tr>
+						<th>PASSWORD</th>
+						<td><input type="text" name="psw"></td>
+					</tr>
+					<tr>
+						<th>CONFIRM PASSWORD</th>
+						<td><input type="text" name="cpsw"></td>
+					</tr>
+					<tr>
+						<th colspan="2"><input type="submit" value="SUBMIT" name="Submit"></th>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
